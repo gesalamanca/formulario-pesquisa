@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="">
+
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Pesquisa de Satisfação</h1>
+        <br>
+        <br>
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/undraw_voice_interface_re_206s.svg" alt="">
+            </div>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" id="e-mail" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Como você avalia nosso atendimento?</strong></label>
+                <label>
+                    <input type="radio" name="atendimento" value="otimo">Ótimo
+                </label>
+                <label>
+                    <input type="radio" name="atendimento" value="bom">Bom
+                </label>
+                <label>
+                    <input type="radio" name="atendimento" value="regular">Regular
+                </label>
+                <label>
+                    <input type="radio" name="atendimento" value="ruim">Ruim
+                </label>
+                <label>
+                    <input type="radio" name="atendimento" value="pessimo">Péssimo
+                </label>
+            </div>
+            <div class="campo">
+                <label><strong>Como você avalia nosso produto?</strong></label>
+                <label>
+                    <input type="radio" name="produto" value="otimo">Ótimo
+                </label>
+                <label>
+                    <input type="radio" name="produto" value="bom">Bom
+                </label>
+                <label>
+                    <input type="radio" name="produto" value="regular">Regular
+                </label>
+                <label>
+                    <input type="radio" name="produto" value="ruim">Ruim
+                </label>
+                <label>
+                    <input type="radio" name="produto" value="pessimo">Péssimo
+                </label>
+            </div>
+            </div>
+            <div class="campo">
+            <label for="recomendacao"><strong>Você recomeda a empresa a uma amigo?</strong></label>
+            <br>
+            <select id="recomendacao">
+                <option selected disabled value="">Selecione</option>
+
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        
+        <fieldset class="grupo">
+            <div id=""check>
+                <label><strong>Quais fatores agregaram na sua experiência:?</strong></label><br><br>
+                <input type="checkbox" id="fator1" value="atendimento">
+                <label for="fator1">Atendimento</label>
+                <input type="checkbox" id="fator2" value="CSS">
+                <label for="fator2">Produto</label>
+                <input type="checkbox" id="fator3" value="javascript">
+                <label for="fator3">Prazo</label>
+                <input type="checkbox" id="fator4" value="PHP">
+                <label for="fator4">Preço</label>
+                <input type="checkbox" id="fator5" value="C#">
+                <label for="fator5">Entrega</label>
+                <input type="checkbox" id="fator5" value="C#">
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <button class="botao" type="submit">Concluído</button>
+        <br>
+    </form>
+    <br>
+<br>
+</body>
+
+</html>
